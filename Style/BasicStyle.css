@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+::-webkit-scrollbar { 
+    display: none;
+}
+body
+{
+margin: 0;
+padding: 0;
+font-family: roboto;
+}
+
+html
+{
+  box-sizing: border-box;
+}
+*,*:before,*:after
+{
+  box-sizing: inherit;
+}
+
+html
+{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary
+{
+  display: block;
+}
+img
+{
+  border-style: none;
+  vertical-align: middle;
+}
+html,body
+{
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+html
+{
+  overflow-x: hidden;
+}

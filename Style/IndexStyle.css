@@ -1,0 +1,551 @@
+.prev::selection, .next::selection, .dots-container::selection, .scb::selection, img::selection, section::selection, .card::selection, .card p::selection, .card span::selection, br::selection, .sec3 h3::selection, .sec3 input::selection, .sec3 label::selection, .input-box::selection, .navibar a::selection, .numbertext::selection
+{
+  background: none;
+  text-decoration: none;
+}
+section{background: #ffffff;background: mintcream; overflow: hidden;}
+section.content
+{
+  padding: 80px 5% 0;
+  font-family: Roboto;
+}
+.blackback
+{
+  color: rgba(255, 255, 255, 0.5);!important
+}
+.active a.blackback
+{
+  color: white;!important
+}
+.textmiddle
+{
+  text-align: center;
+}
+
+section.moto h1
+{
+  margin: 0;
+  padding: 0;
+  font-size: 7vh;
+  font-weight: 300;
+  letter-spacing: -3px;
+}
+
+section.moto p.thin
+{
+  margin: 20px 0 0;
+  padding: 0;
+  font-size: 2.2em;
+  font-family: Roboto;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+section.moto span
+{
+  font-weight: 300;
+}
+
+/*Image Slider*/
+#top .mySlides img
+{
+  width: 100%;
+  object-fit: cover;
+  height: 80vh;
+}
+#top .slideshow-container
+{
+  max-width: 100vw;
+}
+.slideshow-container
+{
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides, .prev, .next
+{
+    display: none;
+}
+.mySlides{height: 80vh;}
+/* Next & previous buttons */
+@media (min-width: 769px) {
+   .prev, .next
+  {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: auto;
+    padding: 38vh 16px;
+    color: rgba(255, 255, 255, .2);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    display: block;
+  }
+  /* Position the "next button" to the right */
+  .next
+  {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } 
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover
+{
+  color: rgba(255 ,255 ,255 ,1);
+}
+/* Number text (1/3 etc) */
+.numbertext
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 250ms ease, opacity 250ms ease;
+  opacity: .8;
+}
+.activedot, .dot:hover
+{
+  background-color: #717171;
+}
+.dots-container
+{
+  position: absolute;
+  width: 100%;
+}
+.dots-container:hover .dots
+{
+  opacity: 1;
+}
+/* Fading animation */
+.fade
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 250ms;
+  animation-name: fade;
+  animation-duration: 250ms;
+}
+@-webkit-keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.thumb img
+{
+  width: 40vh;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-50%) translateY(-50%);
+  top: -100%;
+  left: 50%;
+  opacity: 0.85;
+  position: absolute;
+  image-rendering: pixelated;
+}
+@media (min-width: 769px){
+  .thumb img
+    {left: 40%;}
+}
+@media (max-width: 768px){
+  .thumb img
+    {top: 20%!important;}}
+section.sec2
+{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  padding: 0 0 100px 0;
+  overflow: hidden;
+}
+section h1.scb
+{
+  text-align: center;
+  font-family: roboto;
+  font-weight: 500;
+  margin: 0;
+  padding: 42px;
+  font-size: 4.521em;
+  color: #ffffff;
+  transform: translateY(-49.4%);
+  left: 50%;
+}
+section h1.b2
+{
+  color: #000000;
+  transform: translateY(50.5%);
+  letter-spacing: inherit;
+}
+@media (max-width: 875px){
+  section h1.scb
+  {
+    font-size: 2em;
+  }
+  section h1.b2
+  {
+    transform: translateY(50.5%);
+  }
+}
+.card
+{
+  padding: 0;
+  margin: 0 13% 11.5% 13%;
+  background: white;
+  animation: background 250ms;
+  font-family: roboto, monospace;
+  font-weight: 500;
+  border-radius: 4% 4% 0 0;
+}
+.card p
+{
+  color: white;
+  margin: 0;
+  padding: 4.6% 15px;
+  transition: background 250ms, color 250ms;
+  background: rgba(0, 0, 0, 0.8);
+}
+.card a
+{
+  text-decoration: none;
+  transition: opacity 250ms;
+}
+.card a:hover
+{
+  opacity: 0.7;
+}
+.card a:hover p
+{
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 1.0);
+}
+.card a:hover span
+{
+  color: rgba(0, 0, 0, .5);
+}
+.card a span
+{
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 250ms;
+}
+.card img
+{
+  max-width: 100%;
+  border-radius: 3% 3% 0 0;
+  image-rendering: pixelated;
+}
+.grid-parent
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  margin: -75px 0;
+}
+
+/*     _              _
+    ^ | |            | |
+   / \| |__  __ _   _| |_
+  / ^ \  _ \/  \ | | | __|
+ / ___ \|_) |() ||_| | |_
+/_/   \_\__/\__/\__,_|\__| about*/
+
+about section.about
+{
+  padding-bottom: 80px;
+  font-family: roboto, sans-serif;
+}
+about h1
+{
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 3em;
+  text-align: center;
+}
+about p
+{
+  margin: 0;
+  padding: 0;
+}
+about imgbox
+{
+  padding: 0;
+  margin: 0;
+  display: block;
+  z-index: 1000;
+}
+about-anin
+{
+  width: 100%;
+}
+.lightbox
+{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 120%;
+  height: 120%;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+  background: rgba(0,0,0,0.8);
+  opacity: 0;
+}
+
+.lightbox img
+{
+  max-width: 90vw;
+  max-height: 80vh;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.lightbox:target
+{
+  outline: none;
+  animation-name: bgfade;
+  display: block;
+  opacity: 1;
+  animation-duration: 250ms;
+}
+.lightbox:target img
+{
+  animation-name: photozoom;
+  animation-duration: 250ms;
+}
+@keyframes bgfade
+{
+ from {opacity: 0;}
+ to   {opacity: 1;}
+}
+@keyframes photozoom
+{
+  from  {height: 0;}
+  to    {height: 80vh;}
+
+}
+@media (min-width: 769px) {
+  about imgbox
+  {
+    width: 30%;
+  }
+  about img.thumbnail
+  {
+    width: 100%;
+    padding: 10%;
+    height: auto;
+    float: left;
+    margin: 0 0 -20px;
+  }
+}
+
+
+/*_____       _            
+|  ____|     | |
+| |__ __  __ | |_ ___ _ __
+|  __/  \/  \| __/ _ \ '__|
+| | | () |() | ||  __/ |
+|_|  \__/ __/ \__\___|_| footer*/
+
+section.sec3
+{
+  width: 100%;
+  height: 40vh;
+  background: url('../img/thumb-3.jpg');
+  background-size: cover;
+  font-family: roboto;
+}
+
+section.sec3 div.Lsc3
+{
+  background: rgba(0, 0, 0, .7);
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+section.sec3 div.Rsc3
+{
+  background: rgba(0, 0, 0, .7);
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.Lsc3 h3
+{
+  padding: 10px 0 0 10px;
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+textarea,
+input,
+.Lsc3
+{
+  padding: 0;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8);
+}
+.input-box
+{
+  position: relative;
+  margin-top: 0;
+}
+.input-box textarea,
+.input-box input
+{
+  width: 50%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #666;
+}
+.input-box textarea,
+.input-box input,
+input.button
+{
+  margin-left: 10px;
+  font-family: roboto;
+  max-width: 100%;
+  max-height: 20vh;
+}
+input.button
+{
+  background: #ff006a;
+  color: #fff;
+  padding: 3px 10px;
+  margin-left: calc(50% - 106.2px);
+  border: none;
+  outline: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+input.button:hover
+{
+  color: black;
+}
+.input-box label
+{
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+.input-box input:focus + label,
+.input-box textarea:focus + label
+{
+  color: rgba(255, 255, 255, .4);
+}
+@media (min-width:2048px)
+{
+  img.sc
+  {
+    padding: 100px;
+  }
+}
+@media (min-width:769px)
+{
+  .black .special
+  {
+  background: none;
+  }
+  img.sc
+  {
+   width: 33%
+  }
+  body
+  {
+    width: 70vw;
+    margin: 0 auto;
+    box-shadow: 0 0 100px -20px;
+    background: white;
+    background: #ffffff;
+  }
+  .dots-container
+  {
+    width: 70%;
+  }
+}
+@media (max-width:768px)
+{
+  img.sc
+  {
+    padding: 20px;
+  }
+  table.sc
+  {
+    height: 80vh;
+  }
+}
+@media (max-width:376px)
+{
+  img.sc
+  {
+    padding: 3px;
+  }
+}
+
+/*SHOWCASE CAPACITY*/
+@media (max-width:4028px){
+  .card:nth-last-child(-n+1)
+  {display: none;}
+}
+@media (max-width:3578px){
+  .card:nth-last-child(-n+2)
+  {display: none;}
+}
+@media (max-width:3128px){
+  .card:nth-last-child(-n+3)
+  {display: none;}
+}
+@media (max-width:2678px){
+  .card:nth-last-child(-n+4)
+  {display: none;}
+}
+@media (max-width:2228px){
+  .card:nth-last-child(n+2)
+  {display: block;}
+}
+@media (max-width:1778px){
+  .card:nth-last-child(n+1)
+  {display: block;}
+}
+@media (max-width:1328px){
+  .card:nth-last-child(-n+1)
+  {display: none;}
+}
+@media (max-width:878px){
+  .card:nth-last-child(-n+1)
+  {display: block;}
+  .card
+  {
+    margin: 0 9% 11.5% 9%;
+  }
+  .grid-parent
+  {
+    grid-template-columns: repeat(auto-fit, minmax(194px, 1fr));
+    grid-gap: 0;
+  }
+}

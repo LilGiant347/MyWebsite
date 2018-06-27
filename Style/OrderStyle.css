@@ -1,0 +1,154 @@
+.alignmid
+{
+	text-align: center;
+	margin: 0;
+}
+section
+{
+	height: 70vh;
+    text-shadow: 0px 1px 5px #000000;
+	font-family: roboto;
+}
+
+/* __          __
+   \ \        / /\
+    \ \  /\  / /  \
+     \ \/  \/ / /\ \
+      \  /\  / ____ \
+       \/  \/_/    \_\*/
+section.sc1
+{
+	color: rgb(249, 238, 255);
+	background: url('../img/whatsapp.jpg');
+}
+section.sc1 div.a
+{
+	box-shadow: 0px 11px 17px -10px #000;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+	margin: 0 auto;
+}
+section img
+{
+	height: 18%;
+	float: left;
+	position: absolute;
+	margin: 1.5% 1.5%;
+}
+img.borad
+{
+	box-shadow: 0px 3px 7px -1px #000;
+	border-radius: 25%;
+}
+img.borad1
+{
+    box-shadow: 0px 3px 8px -1px #000;
+	border-radius: 5%;
+}
+section.sc1 div.ab
+{
+	margin-top: -1px
+}
+section.sc1 h1.aa
+{
+    padding: 2.5%;
+    background: #29B53F;
+}
+section.sc1 p.ab
+{
+    padding: 10%;
+    background: #60D36B;
+    background: linear-gradient(#29B53F, #60D36B 2%);
+	font-size: 2.3em;
+}
+/* _____ _____
+  |_   _/ ____|
+    | || |  __
+    | || | |_ |
+   _| || |__| |
+  |_____\_____|*/
+section.sc2
+{
+	color: rgb(249, 238, 255);
+    background: radial-gradient(closest-side at 6.1% 96%,
+    			rgba(249, 217, 120,.8) 138.3%,
+    			rgb(234, 115, 44) 1220.9%,
+    			rgba(56, 63, 231,.8) 2567% );
+    margin: 1vh 0;
+}
+section.sc2 div.a
+{
+	box-shadow: 0px 16px 17px -10px #000;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+	margin: 0 auto;
+}
+section.sc2 div.ab
+{
+	margin-top: -1px;
+}
+section.sc2 h1.aa
+{
+    padding: 2.5%;
+    background: rgba(255, 255, 255, 0.35);
+}
+section.sc2 p.ab
+{
+    padding: 10%;
+    background: #60D36B;
+    background: rgba(255, 255, 255, 0.15);
+	font-size: 2.3em;
+}
+section a
+{
+	color: inherit;
+}
+/*_____ __  __
+ / ____|  \/  |
+| |  __| \  / |
+| | |_ | |\/| |
+| |__| | |  | |
+ \_____|_|  |_|*/
+ section.sc3
+{
+	color: rgb(249, 238, 255);
+	background: url(../img/gmail.jpg);
+}
+section.sc3 div.a
+{
+	box-shadow: 0px 16px 17px -10px #000;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+	margin: 0 auto;
+}
+section.sc3 div.ab
+{
+	margin-top: -1px
+}
+section.sc3 h1.aa
+{
+    padding: 2.5%;
+    background: rgba(0, 0, 0, 0.65);
+	width: 57vw;
+	margin-left: -1%
+}
+section.sc3 p.ab
+{
+    padding: 10%;
+    background: rgba(0, 0, 0, 0.35);
+	font-size: 2.3em;
+}
+@media (min-width: 768px) {
+	.ulele
+	{
+  		width: 70vw;
+  		margin: 0 auto;
+  		box-shadow: 0 0 100px -20px;
+	}	
+}
