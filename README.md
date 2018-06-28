@@ -1,7 +1,7 @@
 # DipCrochet
 
-Website link >> [Dip Crochet] (https://lilgiant347.github.io/MyWebsite/Index.html)
-
+Website link >> [Dip Crochet](https://lilgiant347.github.io/MyWebsite/Index.html)
+ 
 
 ###### 11-6-2018:
 Scroll effect untuk header
