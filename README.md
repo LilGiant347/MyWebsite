@@ -4,8 +4,8 @@ Website link >> [Dip Crochet](https://lilgiant347.github.io/MyWebsite/Index.html
 
 ### 28/June/2018:
 1. Ukuran Body 70%
-2. /+ Gambar di - About
-3. /+ Lightbox (Photo viewer)
+2. (+) Gambar di - About
+3. (+) Lightbox (Photo viewer)
 
 ### 12/June/2018:
 1. Slideshow bug fixed
@@ -13,13 +13,13 @@ Website link >> [Dip Crochet](https://lilgiant347.github.io/MyWebsite/Index.html
 ### 11/June/2018:
 ###### Yang udah ditambahin kurang lebih:
 1. Showcase black and white
-2. /+ Tulisan showcase
-3. /+ Logo DipCrochet
-4. /+ Tulisan About
-5. /+ Order link bisa dibuka (Whatsapp, Instagram, Email)
-6. /+ Icon Browser
-7. /+ Slideshow Photo
-8. Slideshow /+ Fadding /+ Mengecil
+2. (+) Tulisan showcase
+3. (+) Logo DipCrochet
+4. (+) Tulisan About
+5. (+) Order link bisa dibuka (Whatsapp, Instagram, Email)
+6. (+) Icon Browser
+7. (+) Slideshow Photo
+8. Slideshow (+) Fadding (+) Mengecil
 9. Logo DIP CROCHET Responsive
 
 ###### Ide ide yang mau aku tambahin:
