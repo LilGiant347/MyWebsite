@@ -11,7 +11,7 @@ Website link >> [Dip Crochet](https://lilgiant347.github.io/MyWebsite/Index.html
 1. Slideshow bug fixed
 
 ## 11/June/2018:
-##### Yang udah ditambahin kurang lebih:
+### Yang udah ditambahin kurang lebih:
 1. Showcase black and white
 2. (+) Tulisan showcase
 3. (+) Logo DipCrochet
@@ -22,7 +22,7 @@ Website link >> [Dip Crochet](https://lilgiant347.github.io/MyWebsite/Index.html
 8. Slideshow (+) Fadding (+) Mengecil
 9. Logo DIP CROCHET Responsive
 
-##### Ide ide yang mau aku tambahin:
+### Ide ide yang mau aku tambahin:
 1. Contact Page
 2. Tambahin Photo Viewer
 3. Photo Slide di Home
@@ -37,7 +37,7 @@ Laptop error gara gara update windows
 ## 17/May/2018:
 Hampir "selesai"
 
-##### yang kurang:
+### yang kurang:
 1. Thumbnail masih nge bug, muncul di atas navbar
 2. Halaman buat Buy, About, Contact.
 3. Info di paling halaman bawah (yang bagian gelap)
