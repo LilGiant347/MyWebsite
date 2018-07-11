@@ -9,7 +9,10 @@ section
     text-shadow: 0px 1px 5px #000000;
 	font-family: roboto;
 }
-
+div .ab
+{
+	overflow: hidden;
+}
 /* __          __
    \ \        / /\
     \ \  /\  / /  \
@@ -37,7 +40,7 @@ section img
 	height: 18%;
 	float: left;
 	position: absolute;
-	margin: 1.5% 1.5%;
+	margin: 1.5vh 2.7vw;
 }
 img.borad
 {
@@ -144,7 +147,7 @@ section.sc3 p.ab
 {
     padding: 10%;
     background: rgba(0, 0, 0, 0.35);
-	font-size: 2.3em;
+	font-size: 1.5em;
 }
 @media (min-width: 768px) {
 	.ulele
@@ -152,5 +155,16 @@ section.sc3 p.ab
   		width: 70vw;
   		margin: 0 auto;
   		box-shadow: 0 0 100px -20px;
-	}	
+	}
+	section.sc3 p.ab
+	{
+		font-size: 2.3em;
+	}
+	section img
+	{
+		height: 18%;
+		float: left;
+		position: absolute;
+		margin: 1.5vh calc(1.5vw / 10 * 7);
+	}
 }
