@@ -20,6 +20,8 @@ section.sc1
 {
 	color: rgb(249, 238, 255);
 	background: url('../img/whatsapp.jpg');
+    height: 80vh;
+    padding-top: 15vh;
 }
 section.sc1 div.a
 {
@@ -117,6 +119,8 @@ section a
 {
 	color: rgb(249, 238, 255);
 	background: url(../img/gmail.jpg);
+    height: 80vh;
+    padding-bottom: 15vh;
 }
 section.sc3 div.a
 {
