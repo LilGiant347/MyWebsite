@@ -8,6 +8,9 @@
 			{
 				$('body').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?random')");
 			});
+			function myFunction() {
+			    location.reload();
+			}
 	</script>
 	<style type="text/css">
 		*
@@ -26,6 +29,14 @@
 			background-position: center;
 			background-repeat: no-repeat;
 		}
+		button
+		{
+			opacity: .3;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
 	</style>
 	<title>Random Image</title>
 	<meta charset="utf-8">
@@ -35,5 +46,6 @@
 	<link rel="icon" href="https://picsum.photos/100?random">
 </head>
 <body>
+	<button onclick="myFunction()">R</button>
 </body>
 </html>
