@@ -1,276 +1,279 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <link rel="stylesheet" href="Style/Navibar.css">
-        <link rel="stylesheet" href="Style/BasicStyle.css">
-        <link rel="stylesheet" href="Style/IndexStyle.css">
-        <link rel="shortcut icon" href="img/ico.ico">
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="JSIndex.js"></script>
-        <script src="mySlides.js"></script>
-        <script src="NavbarScript.js"></script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <title>DIP Crochet</title>
+    <link rel="stylesheet" href="Style/Navibar.css">
+    <link rel="stylesheet" href="Style/BasicStyle.css">
+    <link rel="stylesheet" href="Style/IndexStyle.css">
+    <link rel="shortcut icon" href="img/ico.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="JSIndex.js"></script>
+    <script src="mySlides.js"></script>
+    <script src="NavbarScript.js"></script>
 
-    </head>
+    <title>DIP Crochet</title>
 
+</head>
 
-    <body>
-    	<navi-bar>
-			<nav class="wholenav">
-				<div class="toggle menu">
-					<i class="hamburg"></i>
-				</div>
+<body>
+    <navi-bar>
+        <nav class="wholenav">
+            <div class="toggle menu">
+                <i class="hamburg"></i>
+            </div>
 
-				<div class="navibar">
-					<a title="Home Page" href="Index.html">
-					<img class="logo" src="img/logo-ico.png"></img>
-					</a>
-				</div>
+            <div class="navibar">
+                <a title="Home Page" href="Index.html">
+                    <img class="logo" src="img/logo-ico.png"></img>
+                </a>
+            </div>
 
-				<ul class="navibar">
-					<li class="first active"><a title="Home Page" href="#top" class="scroll">Home</a></li>
-					<li><a title="Showcase" href="Home.html#showcase" class="scroll">Showcase</a></li>
-					<li><a title="About" href="#about-me" class="scroll">About</a></li>
-			  		<li class="special"><a title="Order Page" href="Order.html">Order</a></li>
-				</ul>
-			</nav>
-		</navi-bar>
+            <ul class="navibar">
+                <li class="first active"><a title="Home Page" href="#top" class="scroll">Home</a></li>
+                <li><a title="Showcase" href="Home.html#showcase" class="scroll">Showcase</a></li>
+                <li><a title="About" href="#about-me" class="scroll">About</a></li>
+                <li class="special"><a title="Order Page" href="Order.html">Order</a></li>
+            </ul>
+        </nav>
+    </navi-bar>
 
+    <header>
+        <section class="sec1 top" id="top">
+            <div class="slideshow-container">
 
+                <div class="mySlides fade" style="display:block;image-rendering:pixelated;">
+                    <div class="numbertext"></div>
+                    <img class="slide-photo" src="https://images.pexels.com/photos/261385/pexels-photo-261385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
 
-		<header>
-			<section class="sec1 top" id="top">
-				<div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img class="slide-photo" src="https://images.pexels.com/photos/848554/pexels-photo-848554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
 
-					<div class="mySlides fade" style="display:block;image-rendering:pixelated;">
-						<div class="numbertext"></div>
-						<img class="slide-photo" src="https://images.pexels.com/photos/261385/pexels-photo-261385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-					</div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img class="slide-photo" src="https://images.pexels.com/photos/618669/pexels-photo-618669.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                </div>
 
-					<div class="mySlides fade">
-						<div class="numbertext"></div>
-						<img class="slide-photo" src="https://images.pexels.com/photos/848554/pexels-photo-848554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-					</div>
+                <!--Next & Prev Buttons-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
 
-					<div class="mySlides fade">
-						<div class="numbertext"></div>
-						<img class="slide-photo" src="https://images.pexels.com/photos/618669/pexels-photo-618669.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
-					</div>
+            <!--Dots-->
+            <div class="dots-container" style="text-align:center">
+                <span class="dot activedot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
 
+            <div class="thumb">
+                <img src="img/logo-thumb2.png" class="thumb-logo" alt="LOGO-BULAT-PUTIH-icon">
+            </div>
+        </section>
+    </header>
 
-					<!--Next & Prev Buttons-->
-		 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
-				<br>
+    <section>
+        <moto>
+            <section class="content textmiddle moto">
+                <h1>DIP Crochet</h1>
+                <p class="thin"><span>1.</span> Kualitas yang selalu dijaga dan dinomor satukan</br>
+                    <span>2.</span> Pemesanan selalu dimudahkan</br>
+                    <span>3.</span> Pelayanan yang baik</p>
 
-				<!--Dots-->
-				<div class="dots-container" style="text-align:center">
-					<span class="dot activedot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-				</div>
+                <h1 class="scb b2" id="showcase">❮ SHOWCASE ❯</h1>
+            </section>
+        </moto>
 
-					<div class="thumb">
-					<img src="img/logo-thumb2.png" class="thumb-logo" alt="LOGO-BULAT-PUTIH-icon">
-				</div>
-			</section>
-		</header>
+        <showcase>
+            <section class="sec2">
+                <h1 class="scb">❮ SHOWCASE ❯</h1>
+                <div class="grid-parent">
+                    <div class="card">
+                        <a href="#1sc1">
+                            <img src="img/sc/1sc1.jpg" alt="a placeholder">
+                            <p>Scarf (Yellow)
+                                <br>
+                                <span>Price: Rp70,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#1sc2">
+                            <img src="img/sc/1sc2.jpg" alt="a placeholder">
+                            <p>Scarf (Purple)
+                                <br>
+                                <span>Price: Rp70,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#1sc3">
+                            <img src="img/sc/1sc3.jpg" alt="a placeholder">
+                            <p>Scarf (Pink)
+                                <br>
+                                <span>Price: Rp70,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#2sc1">
+                            <img src="img/sc/2sc1.jpg" alt="a placeholder">
+                            <p>Beanie (Red)
+                                <br>
+                                <span>Price: Rp100,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#2sc2">
+                            <img src="img/sc/2sc2.jpg" alt="a placeholder">
+                            <p>Beanie (Light Blue)
+                                <br>
+                                <span>Price: Rp100,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#2sc3">
+                            <img src="img/sc/2sc3.jpg" alt="a placeholder">
+                            <p>Baby Hat
+                                <br>
+                                <span>Price: Rp100,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#3sc1">
+                            <img src="img/sc/3sc1.jpg" alt="a placeholder">
+                            <p>Loose Bag
+                                <br>
+                                <span>Price: Rp150,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#3sc2">
+                            <img src="img/sc/3sc2.jpg" alt="a placeholder">
+                            <p>Wallet (Pink
+                                <br>
+                                <span>Price: Rp50,000</span></p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#3sc3">
+                            <img src="img/sc/3sc3.jpg" alt="a placeholder">
+                            <p>Crossbody bag
+                                <br>
+                                <span>Price: Rp65,000</span></p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </showcase>
+        <showcaseviewer>
+            <a href="#_" class="lightbox" id="1sc1">
+                <img src="img/sc/Source/1sc1.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="1sc2">
+                <img src="img/sc/Source/1sc2.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="1sc3">
+                <img src="img/sc/Source/1sc3.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="2sc1">
+                <img src="img/sc/Source/2sc1.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="2sc2">
+                <img src="img/sc/Source/2sc2.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="2sc3">
+                <img src="img/sc/Source/2sc3.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="3sc1">
+                <img src="img/sc/Source/3sc1.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="3sc2">
+                <img src="img/sc/Source/3sc2.jpg">
+            </a>
+            <a href="#_" class="lightbox" id="3sc3">
+                <img src="img/sc/Source/3sc3.jpg">
+            </a>
+        </showcaseviewer>
+    </section>
 
+    <about>
+        <section id="about-me" class="about content">
+            <h1>About</h1>
+            <about-anin>
+                <imgbox>
+                    <a href="#about1">
+                        <img src="img/About/about1.jpg" class="thumbnail">
+                    </a>
 
-		<section>
-			<moto>
-				<section class="content textmiddle moto">
-					<h1>DIP Crochet</h1>
-					<p class="thin"><span>1.</span> Kualitas yang selalu dijaga dan dinomor satukan</br>
-									<span>2.</span> Pemesanan selalu dimudahkan</br>
-									<span>3.</span> Pelayanan yang baik</p>
+                    <!-- lightbox container hidden with CSS -->
+                    <a href="#_" class="lightbox" id="about1">
+                        <img src="img/About/about1.jpg">
+                    </a>
+                </imgbox>
+                <abouttext>
+                    <h2>About Diptyaning</h2>
+                    <p>Diptyaning Ratna Anindita
+                        <br>
+                        <br> Homeschooler yang sedang mendaftar di sebuah universitas di indonesia. anak ke-3 dari bapak Sudarmadi dan alm. ibu Riil Viprianis.
+                        <br>
 
-					<h1 class="scb b2" id="showcase">❮ SHOWCASE ❯</h1>
-				</section>
-			</moto>
+                        <i>"awalnya iseng-iseng belajar merajut di kemang pratama. sampai akhirnya ada yang minta dibuatkan topi natal sehingga saya menjadi tertarik membuat rajutan lainnya untuk dijual"</i> -Diptyaning
+                        <br>
+                        <br> Beliau sudah mulai membuat crochet semenjak 2013, tetapi beliau mulai menjadikan crochet sebagai usaha kecil di tahun 2015.</p>
+                </abouttext>
+            </about-anin>
 
-			<showcase>
-				<section class="sec2">
-					<h1 class="scb">❮ SHOWCASE ❯</h1>
-					<div class="grid-parent"> 
-					  	<div class="card">
-					  		<a href="#1sc1">
-								<img src="img/sc/1sc1.jpg" alt="a placeholder">
-								<p>Scarf (Yellow)<br>
-								<span>Price: Rp70,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#1sc2">
-								<img src="img/sc/1sc2.jpg" alt="a placeholder">
-								<p>Scarf (Purple)<br>
-								<span>Price: Rp70,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#1sc3">
-								<img src="img/sc/1sc3.jpg" alt="a placeholder">
-								<p>Scarf (Pink)<br>
-								<span>Price: Rp70,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#2sc1">
-								<img src="img/sc/2sc1.jpg" alt="a placeholder">
-								<p>Beanie (Red)<br>
-								<span>Price: Rp100,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#2sc2">
-								<img src="img/sc/2sc2.jpg" alt="a placeholder">
-								<p>Beanie (Light Blue)<br>
-								<span>Price: Rp100,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#2sc3">
-								<img src="img/sc/2sc3.jpg" alt="a placeholder">
-								<p>Baby Hat<br>
-								<span>Price: Rp100,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#3sc1">
-								<img src="img/sc/3sc1.jpg" alt="a placeholder">
-								<p>Loose Bag<br>
-								<span>Price: Rp150,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#3sc2">
-								<img src="img/sc/3sc2.jpg" alt="a placeholder">
-								<p>Wallet (Pink<br>
-								<span>Price: Rp50,000</span></p>
-					  		</a>
-					  	</div>
-					  	<div class="card">
-					  		<a href="#3sc3">
-								<img src="img/sc/3sc3.jpg" alt="a placeholder">
-								<p>Crossbody bag<br>
-								<span>Price: Rp65,000</span></p>
-					  		</a>
-					  	</div>
-					</div>
-				</section>
-			</showcase>
-			<showcaseviewer>
-				<a href="#_" class="lightbox" id="1sc1">
-					<img src="img/sc/Source/1sc1.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="1sc2">
-					<img src="img/sc/Source/1sc2.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="1sc3">
-					<img src="img/sc/Source/1sc3.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="2sc1">
-					<img src="img/sc/Source/2sc1.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="2sc2">
-					<img src="img/sc/Source/2sc2.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="2sc3">
-					<img src="img/sc/Source/2sc3.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="3sc1">
-					<img src="img/sc/Source/3sc1.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="3sc2">
-					<img src="img/sc/Source/3sc2.jpg">
-				</a>
-				<a href="#_" class="lightbox" id="3sc3">
-					<img src="img/sc/Source/3sc3.jpg">
-				</a>
-			</showcaseviewer>
-		</section>
+            <about-crochet>
+                <imgbox>
+                    <a href="#about2">
+                        <img src="img/About/about2.jpg" class="thumbnail">
+                    </a>
 
+                    <!-- lightbox container hidden with CSS -->
+                    <a href="#_" class="lightbox" id="about2">
+                        <img src="img/About/about2.jpg">
+                    </a>
+                </imgbox>
+                <h2>About Crochet</h2>
+                <p>Rajutan menggunakan 1 hakpen</p>
+            </about-crochet>
+        </section>
+    </about>
 
+    <footer>
+        <section class="sec3">
+            <table class="sc3">
+                <div class="Lsc3">
+                    <h3>Masukan</h3>
+                    <form>
+                        <div class="input-box">
+                            <input type="text" name="" required="">
+                            <label>Nama</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="" required="">
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" name="" required="">
+                            <label>Nomor Telp.</label>
+                        </div>
+                        <div class="input-box">
+                            <textarea rows="5" required=""></textarea>
+                            <label>Pesan</label>
+                        </div>
+                        <input type="submit" name="" value="Send Message" class="button">
+                    </form>
+                </div>
+                <div class="Rsc3">
 
-		<about>
-			<section id="about-me" class="about content">
-				<h1>About</h1>
-				<about-anin>
-					<imgbox>
-						<a href="#about1">
-						  <img src="img/About/about1.jpg" class="thumbnail">
-						</a>
+                </div>
+            </table>
+        </section>
+    </footer>
+</body>
 
-						<!-- lightbox container hidden with CSS -->
-						<a href="#_" class="lightbox" id="about1">
-						  <img src="img/About/about1.jpg">
-						</a>
-					</imgbox>
-					<abouttext>
-						<h2>About Diptyaning</h2>
-						<p>Diptyaning Ratna Anindita<br><br>
-
-						Homeschooler yang sedang mendaftar di sebuah universitas di indonesia. anak ke-3 dari bapak Sudarmadi dan alm. ibu Riil Viprianis.<br>
-
-						<i>"awalnya iseng-iseng belajar merajut di kemang pratama. sampai akhirnya ada yang minta dibuatkan topi natal sehingga saya menjadi tertarik membuat rajutan lainnya untuk dijual"</i> -Diptyaning<br><br>
-
-						Beliau sudah mulai membuat crochet semenjak 2013, tetapi beliau mulai menjadikan crochet sebagai usaha kecil di tahun 2015.</p>
-					</abouttext>
-				</about-anin>
-
-				<about-crochet>
-					<imgbox>
-						<a href="#about2">
-						  <img src="img/About/about2.jpg" class="thumbnail">
-						</a>
-
-						<!-- lightbox container hidden with CSS -->
-						<a href="#_" class="lightbox" id="about2">
-						  <img src="img/About/about2.jpg">
-						</a>
-					</imgbox>
-						<h2>About Crochet</h2>
-						<p>Rajutan menggunakan 1 hakpen</p>
-				</about-crochet>
-			</section>
-		</about>
-
-
-
-		<footer>
-			<section class="sec3">
-				<table class="sc3">
-					<div class="Lsc3">
-						<h3>Masukan</h3>
-						<form>
-							<div class="input-box">
-								<input type="text" name="" required="">
-								<label>Nama</label>
-							</div>
-							<div class="input-box">
-								<input type="email" name="" required="">
-								<label>Email</label>
-							</div>
-							<div class="input-box">
-								<input type="tel" name="" required="">
-								<label>Nomor Telp.</label>
-							</div>
-							<div class="input-box">
-								<textarea rows="5" required=""></textarea>
-								<label>Pesan</label>
-							</div>
-							<input type="submit" name="" value="Send Message" class="button">
-						</form>
-					</div>
-					<div class="Rsc3">
-						
-					</div>
-				</table>
-			</section>
-		</footer>
-    </body>
 </html>
