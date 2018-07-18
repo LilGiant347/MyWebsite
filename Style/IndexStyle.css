@@ -258,6 +258,7 @@ section h1.b2
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1em;
   margin: -75px 0;
+  padding: 0 calc(5% - 2.5%);
 }
 
 /*     _              _
@@ -358,7 +359,7 @@ section.sec3
 {
   width: 100%;
   height: 40vh;
-  background: url('../img/thumb-3.jpg');
+  background: url('https://picsum.photos/1366/768/?random');
   background-size: cover;
   font-family: roboto;
 }
@@ -458,22 +459,6 @@ input.button:hover
   {
   background: none;
   }
-  img.sc
-  {
-   width: 33%
-  }
-  body
-  {
-    width: 70vw;
-    margin: 0 auto;
-    box-shadow: 0 0 100px -20px;
-    background: white;
-    background: #ffffff;
-  }
-  .dots-container
-  {
-    width: 70%;
-  }
 }
 @media (max-width:768px)
 {
@@ -493,39 +478,7 @@ input.button:hover
     padding: 3px;
   }
 }
-
-/*SHOWCASE CAPACITY*/
-@media (max-width:4028px){
-  .card:nth-last-child(-n+1)
-  {display: none;}
-}
-@media (max-width:3578px){
-  .card:nth-last-child(-n+2)
-  {display: none;}
-}
-@media (max-width:3128px){
-  .card:nth-last-child(-n+3)
-  {display: none;}
-}
-@media (max-width:2678px){
-  .card:nth-last-child(-n+4)
-  {display: none;}
-}
-@media (max-width:2228px){
-  .card:nth-last-child(n+2)
-  {display: block;}
-}
-@media (max-width:1778px){
-  .card:nth-last-child(n+1)
-  {display: block;}
-}
-@media (max-width:1328px){
-  .card:nth-last-child(-n+1)
-  {display: none;}
-}
-@media (max-width:878px){
-  .card:nth-last-child(-n+1)
-  {display: block;}
+@media (max-width:1034px){
   .card
   {
     margin: 0 9% 11.5% 9%;

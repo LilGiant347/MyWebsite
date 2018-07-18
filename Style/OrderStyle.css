@@ -26,15 +26,6 @@ section.sc1
     height: 80vh;
     padding-top: 15vh;
 }
-section.sc1 div.a
-{
-	box-shadow: 0px 11px 17px -10px #000;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 80%;
-	margin: 0 auto;
-}
 section img
 {
 	height: 18%;
@@ -51,10 +42,6 @@ img.borad1
 {
     box-shadow: 0px 3px 8px -1px #000;
 	border-radius: 5%;
-}
-section.sc1 div.ab
-{
-	margin-top: -1px
 }
 section.sc1 h1.aa
 {
@@ -82,19 +69,6 @@ section.sc2
     			rgb(234, 115, 44) 1220.9%,
     			rgba(56, 63, 231,.8) 2567% );
     margin: 1px 0;
-}
-section.sc2 div.a
-{
-	box-shadow: 0px 16px 17px -10px #000;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 80%;
-	margin: 0 auto;
-}
-section.sc2 div.ab
-{
-	margin-top: -1px;
 }
 section.sc2 h1.aa
 {
@@ -125,19 +99,6 @@ section a
     height: 80vh;
     padding-bottom: 15vh;
 }
-section.sc3 div.a
-{
-	box-shadow: 0px 16px 17px -10px #000;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 80%;
-	margin: 0 auto;
-}
-section.sc3 div.ab
-{
-	margin-top: -1px
-}
 section.sc3 h1.aa
 {
     padding: 2.5%;
@@ -149,13 +110,23 @@ section.sc3 p.ab
     background: rgba(0, 0, 0, 0.35);
 	font-size: 1.5em;
 }
+
+section div.a
+{
+    box-shadow: 0px 11px 17px -10px #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(50vw + 200px);
+    max-width: 90vw;
+    margin: 0 auto;
+}
+section div.ab
+{
+	margin-top: -1px
+}
+
 @media (min-width: 768px) {
-	.ulele
-	{
-  		width: 70vw;
-  		margin: 0 auto;
-  		box-shadow: 0 0 100px -20px;
-	}
 	section.sc3 p.ab
 	{
 		font-size: 2.3em;
@@ -167,4 +138,9 @@ section.sc3 p.ab
 		position: absolute;
 		margin: 1.5vh calc(1.5vw / 10 * 7);
 	}
+}
+
+nav img.logo
+{
+	margin-left: calc((100vw - (50vw + 200px)) / 2)!important;
 }

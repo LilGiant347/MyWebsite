@@ -85,13 +85,8 @@ nav.black a
     transition: height ease-out 250ms, 
                 background ease-out 250ms;
   }
-  nav.wholenav ul
-  {
-    padding-right: calc(50% - 35%);
-  }
   nav img.black
   {
-    margin: 10px;
     clip-path: polygon( 0% 0%, 
                         100% 0%, 
                         100% 50%, 
@@ -106,6 +101,7 @@ nav.black a
   nav.black img.black
   {
     margin: 3px;
+    margin-left: 5%;
   }
   img.logo {
     clip-path: polygon( 0% 0%, 
@@ -120,7 +116,7 @@ nav.black a
                 margin ease-out 250ms;
     margin: 10px;
     position: absolute;
-    margin-left: calc(50% - 34%)!important;
+    margin-left: 5%;
   }
   nav.black ul li
   {
