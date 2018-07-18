@@ -4,9 +4,9 @@
 	<script type="text/javascript">
 			var w = $(window).width();
 			var h = $(window).height();
-			$('div').ready(function()
+			$('body').ready(function()
 			{
-				$('div').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?random')");
+				$('body').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?random')");
 			});
 	</script>
 	<style type="text/css">
@@ -18,7 +18,7 @@
 		::-webkit-scrollbar {
 		    display: none;
 		}
-		div
+		body
 		{
 			background-size: cover;
 			width: 100vw;
@@ -29,6 +29,5 @@
 	</style>
 </head>
 <body>
-	<div class="asdf"></div>
 </body>
 </html>
