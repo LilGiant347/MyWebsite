@@ -4,12 +4,43 @@
 	<script type="text/javascript">
 			var w = $(window).width();
 			var h = $(window).height();
-			$('body').ready(function()
-			{
-				$('body').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?random')");
-			});
-			function myFunction() {
-			    location.reload();
+			var i = 1
+			var number = 1
+			$('.the1,.the2,.the3,.the4,.the5,.the6').ready(function() {
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('div1').attr('class', 'the1');
+					$('.the1').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('div2').attr('class', 'the2');
+					$('.the2').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('div3').attr('class', 'the3');
+					$('.the3').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('div4').attr('class', 'the4');
+					$('.the4').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('div5').attr('class', 'the5');
+					$('.the5').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('div6').attr('class', 'the6');
+					$('.the6').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+
+				});
+			function nextPage() {
+				var x = Math.floor((Math.random() * 1084) + 1);
+				var loop = 1
+				while (loop < 2) {
+					$('.the'+number).css("z-index", i);
+				    i++;
+					number++
+					if (number > 6) {number = 1} 
+					$('.the'+number).css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					$('button').css("z-index", i);
+				    i++;
+				    loop++;
+				}
+
 			}
 	</script>
 	<style type="text/css">
@@ -21,7 +52,7 @@
 		::-webkit-scrollbar {
 		    display: none;
 		}
-		body
+		.the1,.the2,.the3,.the4,.the5,.the6
 		{
 			background-color: #000000;
 			background-size: cover;
@@ -29,6 +60,8 @@
 			height: 100vh;
 			background-position: center;
 			background-repeat: no-repeat;
+			display: block;
+			position: absolute;
 		}
 		button
 		{
@@ -37,8 +70,9 @@
 			position: absolute;
 			bottom: 0;
 			right: 0;
-			height: 2px;
-			width: 2px;
+			height: 100vh;
+			width: 1px;
+			z-index: 5;
 		}
 	</style>
 	<title>Random Image</title>
@@ -49,6 +83,12 @@
 	<link rel="icon" href="https://picsum.photos/100?random">
 </head>
 <body>
-	<button onclick="myFunction()">R</button>
+	<button onclick="nextPage()"></button>
+	<div1 class="the1"></div1>
+	<div2 class="the2"></div2>
+	<div3 class="the3"></div3>
+	<div4 class="the4"></div4>
+	<div5 class="the5"></div5>
+	<div6 class="the6"></div6>
 </body>
 </html>
