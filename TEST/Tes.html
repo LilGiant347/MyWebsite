@@ -4,8 +4,8 @@
 	<script type="text/javascript">
 			var w = $(window).width();
 			var h = $(window).height();
-			var i = 1
-			var number = 1
+			var number = 6
+			var loading = 5
 			$('.the1,.the2,.the3,.the4,.the5,.the6').ready(function() {
 					var x = Math.floor((Math.random() * 1084) + 1);
 					$('div1').attr('class', 'the1');
@@ -31,13 +31,13 @@
 				var x = Math.floor((Math.random() * 1084) + 1);
 				var loop = 1
 				while (loop < 2) {
-					$('.the'+number).css("z-index", i);
-				    i++;
-					number++
-					if (number > 6) {number = 1} 
-					$('.the'+number).css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
-					$('button').css("z-index", i);
-				    i++;
+					$('.the'+number).css("width", "0vw");
+					$('.the'+loading).css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					number++;
+					loading++;
+					if (number > 6) {number = 1}
+					if (loading > 6) {loading = 1}
+					$('.the'+number).css("width", "100vw");
 				    loop++;
 				}
 
@@ -48,6 +48,10 @@
 		{
 			padding: 0;
 			margin: 0;
+		}
+		body
+		{
+			background-color: #000000;
 		}
 		::-webkit-scrollbar {
 		    display: none;
@@ -62,6 +66,14 @@
 			background-repeat: no-repeat;
 			display: block;
 			position: absolute;
+			width: 0vw;
+			transition: width 500ms linear;
+			transform: translateX(-50%);
+			left: 50%;
+		}
+		.the6
+		{
+			width: 100vw;
 		}
 		button
 		{
