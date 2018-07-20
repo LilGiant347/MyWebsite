@@ -6,7 +6,14 @@
 			var h = $(window).height();
 			var number = 6
 			var loading = 5
+			var numberback = 4
+			var loadingback = 3
 			$('.the1,.the2,.the3,.the4,.the5,.the6').ready(function() {
+					// Body backup
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('body').attr('class', 'body');
+					$('body').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?random");
+
 					var x = Math.floor((Math.random() * 1084) + 1);
 					$('div1').attr('class', 'the1');
 					$('.the1').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
@@ -25,11 +32,27 @@
 					var x = Math.floor((Math.random() * 1084) + 1);
 					$('div6').attr('class', 'the6');
 					$('.the6').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+
+					//Backup
+
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('backup1').attr('class', 'theback1');
+					$('.theback1').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('backup2').attr('class', 'theback2');
+					$('.theback2').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('backup3').attr('class', 'theback3');
+					$('.theback3').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+					var x = Math.floor((Math.random() * 1084) + 1);
+					$('backup4').attr('class', 'theback4');
+					$('.theback4').css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
 					
 					window.setInterval(function () {
 						var x = Math.floor((Math.random() * 1084) + 1);
 						var loop = 1
 						while (loop < 2) {
+
 							$('.the'+number).css("display", "none");
 							$('.the'+loading).css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
 							number++;
@@ -37,6 +60,16 @@
 							if (number > 6) {number = 1}
 							if (loading > 6) {loading = 1}
 							$('.the'+number).css("display", "block");
+							//Backup
+
+							$('.theback'+numberback).css("display", "none");
+							$('.theback'+loadingback).css("background-image", "url('https://picsum.photos/" + w + "/" + h + "/?image="+x+"')");
+							numberback++;
+							loadingback++;
+							if (numberback > 4) {numberback = 1}
+							if (loadingback > 4) {loadingback = 1}
+							$('.theback'+numberback).css("display", "block");
+
 						    loop++;
 						}
 					}, 6000);
@@ -55,9 +88,9 @@
 		::-webkit-scrollbar {
 		    display: none;
 		}
-		.the1,.the2,.the3,.the4,.the5,.the6
+		/*Backup*/
+		.theback1,.theback2,.theback3,.theback4
 		{
-			background-color: #000000;
 			background-size: cover;
 			width: 100vw;
 			height: 100vh;
@@ -65,10 +98,21 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			display: none;
-			transform: translateX(-50%);
-			left: 50%;
+			z-index: 1;
 		}
-		.the6
+		/*Main Photos*/
+		.the1,.the2,.the3,.the4,.the5,.the6
+		{
+			background-size: cover;
+			width: 100vw;
+			height: 100vh;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: absolute;
+			display: none;
+			z-index: 2;
+		}
+		.the6,.theback4
 		{
 			display: block;
 		}
@@ -81,6 +125,12 @@
 	<link rel="icon" href="https://picsum.photos/100?random">
 </head>
 <body>
+	<!--Backup-->
+	<backup1 class="theback1"></backup1>
+	<backup2 class="theback2"></backup2>
+	<backup3 class="theback3"></backup3>
+	<backup4 class="theback4"></backup4>
+	<!--Main photos-->
 	<div1 class="the1"></div1>
 	<div2 class="the2"></div2>
 	<div3 class="the3"></div3>
