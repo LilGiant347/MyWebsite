@@ -18,11 +18,7 @@ function showSlides2(n) {
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" activedot", "");
-  }
   slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " activedot";
 }
 
 $(document).ready(function(){
@@ -40,11 +36,7 @@ $(document).ready(function(){
         }
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" activedot", "");
-        }
         slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " activedot";
         setTimeout(showSlides, 3500);
         if (slideIndex === 2) {
             $("nav ul li a").removeClass('blackback');
