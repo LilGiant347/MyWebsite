@@ -258,6 +258,7 @@ p.small {
     top: 625px;
     text-align: center;
     cursor: pointer;
+    outline-style: none;
     overflow: hidden;
   }
   button.head:after {
