@@ -244,6 +244,46 @@ p.small {
       top: 610.336px;
       left: 200px;
   }
+  button.head {
+    height: 93px;
+    width: 281px;
+    font-family: Agency FB;
+    font-size: 55px;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid #ffffff;
+    color: #ffffff;
+    position: absolute;
+    left: 617px;
+    top: 625px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  button.head:after {
+    content: '';
+    height: 234px;
+    width: 318px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+    border: none;
+    position: absolute;
+    left: -240px;
+    top: -208px;
+    transition: left 250ms, top 250ms;
+    transform: rotate(-45deg);
+  }
+  button.head:hover {
+    color: #6B0F1A;
+    border: solid #6B0F1A;
+  }
+  button.head:hover:after {
+    left: 169px;
+    top: 90px;
+  }
+  button.head:active {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(4px);
+  }
 }
 
 
