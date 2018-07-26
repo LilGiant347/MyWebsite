@@ -283,6 +283,7 @@ p.small {
   button.head:active {
     background-color: rgba(0, 0, 0, 0.3);
     transform: translateY(4px);
+    
   }
 }
 
