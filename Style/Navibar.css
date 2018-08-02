@@ -57,8 +57,8 @@ nav ul li a
   padding: 16px 20px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color ease-out 250ms, 
-              background ease-out 250ms, 
+  transition: color ease-out 250ms,
+              background ease-out 250ms,
               line-height ease-out 250ms;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -70,6 +70,7 @@ nav.black
 {
   background: rgba(10, 10, 10, 0.9);
   height: 56px;
+  box-shadow: 0 0 10px 0px black;
 }
 
 nav.black a
@@ -82,20 +83,20 @@ nav.black a
 {
   .wholenav
   {
-    transition: height ease-out 250ms, 
+    transition: height ease-out 250ms,
                 background ease-out 250ms;
   }
   nav img.black
   {
-    clip-path: polygon( 0% 0%, 
-                        100% 0%, 
-                        100% 50%, 
-                        100% 67%, 
-                        100% 87%, 
-                        100% 100%, 
+    clip-path: polygon( 0% 0%,
+                        100% 0%,
+                        100% 50%,
+                        100% 67%,
+                        100% 87%,
+                        100% 100%,
                         0% 100%
                       );
-    transition: clip-path ease-out 2000ms, 
+    transition: clip-path ease-out 2000ms,
                 margin ease-out 250ms;
   }
   nav.black img.black
@@ -104,15 +105,15 @@ nav.black a
     margin-left: 5%;
   }
   img.logo {
-    clip-path: polygon( 0% 0%, 
-                        25.3% 0%, 
-                        25.5% 50%, 
-                        23.9% 67%, 
-                        18% 87%, 
-                        15% 100%, 
+    clip-path: polygon( 0% 0%,
+                        25.3% 0%,
+                        25.5% 50%,
+                        23.9% 67%,
+                        18% 87%,
+                        15% 100%,
                         0% 100%
                       );
-    transition: clip-path ease-out 250ms, 
+    transition: clip-path ease-out 250ms,
                 margin ease-out 250ms;
     margin: 10px;
     position: absolute;
@@ -182,7 +183,7 @@ nav.black a
     width: 65px;
     height: 80px;
     clip-path: polygon(0px 0px, 65px 0px, 65px 65px, 0px 65px);
-    transition: width 120ms, 
+    transition: width 120ms,
                 clip-path 120ms,
                 height 120ms;
   }
@@ -191,7 +192,7 @@ nav.black a
     width: 50%;
     height: auto;
     clip-path: polygon(0px 0px, 100% 0px, 100% 100vh, 0px 100vh);
-    transition: width 120ms, 
+    transition: width 120ms,
                 clip-path 120ms;
   }
   .logo

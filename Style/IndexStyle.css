@@ -1,3 +1,4 @@
+@import url(http://allfont.net/allfont.css?fonts=agency-fb);
 .prev::selection, .next::selection, .dots-container::selection, .scb::selection, img::selection, section::selection, .card::selection, .card p::selection, .card span::selection, br::selection, .sec3 h3::selection, .sec3 input::selection, .sec3 label::selection, .input-box::selection, .navibar a::selection, .numbertext::selection
 {
   background: none;
@@ -154,41 +155,27 @@ section.moto span
 
 /*HEADER*/
 .head-wrap h1 {
-  font-family: Harlow Solid, Impact;
-  font-size: 111px;
-  position: absolute;
-  left: 679px;
-  color: #ffffff;
-  top: 198.352px;
-  white-space: nowrap;
+    font-family: Harlow Solid, Impact;
+    font-size: 111px;
+    position: absolute;
+    left: 610px;
+    color: #ffffff;
+    top: 0;
+    white-space: nowrap;
+    line-height: 0;
+    text-shadow: 0 0 5px black;
 }
 .head-wrap p {
   font-family: Agency FB;
-  position: absolute;
   font-size: 45px;
   color: #ffffff;
+  margin: 0;
+  line-height: 1.1em;
 }
 p.small {
   font-size: 35.7px;
 }
-button.head {
-  height: 93px;
-  width: 281px;
-  font-family: Agency FB;
-  font-size: 55px;
-  white-space: nowrap;
-  background-color: rgba(0, 0, 0, 0);
-  border: solid #ffffff;
-  color: #ffffff;
-  position: absolute;
-  left: 617px;
-  top: 625px;
-  text-align: center;
-  cursor: pointer;
-  outline-style: none;
-  overflow: hidden;
-}
-  .head-wrap:before
+  .head-wrap
   {
     content: '';
     position: absolute;
@@ -198,6 +185,7 @@ button.head {
     top: 278px;
     left: 68px;
     opacity: .9;
+    box-shadow: 0 0 20px black;
   }
     .head-wrap:after
   {
@@ -209,7 +197,7 @@ button.head {
     background-repeat: repeat-x;
     width: 514px;
     height: 35px;
-    top: 278px;
+    top: 0;
     left: 308px;
   }
   decoration:before, decoration:after
@@ -220,17 +208,15 @@ button.head {
     width: 11px;
     border-radius: 5.5px;
   }
-  decoration:before
-  {
-    height: 297px;
-    top: 444px;
-    left: 1046px;
+  decoration:before {
+      height: 297px;
+      top: 163px;
+      left: 978px;
   }
-  decoration:after
-  {
-    height: 11px;
-    top: 761px;
-    left: 1046px;
+  decoration:after {
+      height: 11px;
+      top: 481px;
+      left: 978px;
   }
   triangle{
     width: 0;
@@ -240,40 +226,58 @@ button.head {
     border-color: transparent transparent #ffffff transparent;
     position: absolute;
     transform: rotate(-135deg);
-    top: 744px;
-    left: 48px;
+    top: 465px;
+    left: -20px;
   }
   .head-wrap .t1 {
-    top: 376px;
-    left: 116px;
+    margin-top: 150px;
+    margin-left: 50px;
   }
   .head-wrap .t2 {
-    top: 441px;
-    left: 301px;
+    margin-top: 20px;
+    margin-left: 235px;
   }
   .head-wrap .b1 {
-      top: 550px;
-      left: 173px;
+    margin-top: 45px;
+    margin-left: 105px;
   }
   .head-wrap .b2 {
-      top: 610px;
-      left: 200px;
+    margin-top: 25px;
+    margin-left: 135px;
   }
+  button.head {
+    height: 93px;
+    width: 100vw;
+    max-width: 281px;
+    font-family: Agency FB;
+    font-size: 55px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid #ffffff;
+    color: #ffffff;
+    transform: translateY(-70px);
+    margin-left: 550px;
+    text-align: center;
+    cursor: pointer;
+    outline-style: none;
+    overflow: hidden;
+    padding: 1px 6px;
+    text-shadow: 0px 2px 4px black;
+    box-shadow: 0px 3px 5px 1px black;
+}
   button.head:after {
     content: '';
     height: 234px;
     width: 318px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
     border: none;
-    position: absolute;
     left: -240px;
     top: -208px;
     transition: left 250ms, top 250ms;
     transform: rotate(-45deg);
+    position: absolute;
   }
   button.head:hover {
     color: #6B0F1A;
-    border: solid #6B0F1A;
   }
   button.head:hover:after {
     left: 169px;
@@ -281,11 +285,13 @@ button.head {
   }
 button.head:active {
   background-color: rgba(0, 0, 0, 0.3);
-  transform: translateY(4px);
+  transform: translateY(-66px);
+  text-shadow: 0px 1px 1px black;
+  box-shadow: 0px 1px 1px 1px black;
 }
 @media (max-width: 1340px)
 {
-    .head-wrap:before
+    .head-wrap
     {
       width: 100vw;
       height: 403px;
@@ -354,7 +360,7 @@ button.head:active {
     {
       display: none;
     }
-    .head-wrap:before
+    .head-wrap
     {
       height: 444px;
     }
@@ -596,8 +602,10 @@ section.sec3
   width: 100%;
   height: 40vh;
   background: url('https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=768');
+  background: url('https://picsum.photos/1366/270?random');
   background-size: cover;
   font-family: roboto;
+  background-position: center;
 }
 section.sec3:after
 {
